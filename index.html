@@ -336,37 +336,6 @@
     .why-badge-label { font-size: var(--text-xs); color: rgba(255,255,255,0.75); line-height: 1.4; max-width: 9ch; }
     [data-theme="dark"] .why-badge-label { color: var(--color-text-muted); }
 
-    /* ===== TESTIMONIALS ===== */
-    .testimonials-bg { background: linear-gradient(160deg, var(--color-primary) 0%, #0d1830 100%); }
-    [data-theme="dark"] .testimonials-bg { background: var(--color-surface); }
-    .testimonials-bg .section-label { color: var(--color-gold); }
-    .testimonials-bg .section-title { color: #fff; }
-    [data-theme="dark"] .testimonials-bg .section-title { color: var(--color-text); }
-    .testimonials-bg .section-sub { color: rgba(255,255,255,0.65); }
-    [data-theme="dark"] .testimonials-bg .section-sub { color: var(--color-text-muted); }
-    .testimonials-grid { margin-top: var(--space-12); display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: var(--space-6); }
-    .testimonial-card {
-      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);
-      border-radius: var(--radius-xl); padding: var(--space-8);
-      transition: background var(--transition-interactive);
-    }
-    [data-theme="dark"] .testimonial-card { background: var(--color-surface-2); border-color: var(--color-border); }
-    .testimonial-card:hover { background: rgba(255,255,255,0.1); }
-    [data-theme="dark"] .testimonial-card:hover { background: var(--color-surface-offset); }
-    .stars { display: flex; gap: var(--space-1); margin-bottom: var(--space-4); color: var(--color-gold); }
-    .testimonial-text { font-size: var(--text-base); color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: var(--space-6); font-style: italic; }
-    [data-theme="dark"] .testimonial-text { color: var(--color-text); }
-    .testimonial-author { display: flex; align-items: center; gap: var(--space-3); }
-    .author-avatar {
-      width: 44px; height: 44px; border-radius: var(--radius-full);
-      background: var(--color-gold); display: flex; align-items: center; justify-content: center;
-      font-family: var(--font-display); font-weight: 700; font-size: var(--text-base); color: #fff; flex-shrink: 0;
-    }
-    .author-name { font-weight: 700; font-size: var(--text-sm); color: rgba(255,255,255,0.9); }
-    [data-theme="dark"] .author-name { color: var(--color-text); }
-    .author-service { font-size: var(--text-xs); color: rgba(255,255,255,0.5); }
-    [data-theme="dark"] .author-service { color: var(--color-text-muted); }
-
     /* ===== CTA ===== */
     .cta-section { background: var(--color-bg); }
     .cta-card {
@@ -513,7 +482,6 @@
   <nav class="nav" id="nav" role="navigation" aria-label="Main">
     <div class="nav-inner">
       <a href="#" class="nav-logo" aria-label="JP OneSource Home">
-        <!-- SVG Logo: JP monogram in ellipse mark -->
         <svg class="nav-logo-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
           <ellipse cx="20" cy="20" rx="19" ry="19" fill="#1b2d5b" stroke="none"/>
           <ellipse cx="20" cy="20" rx="15" ry="13" fill="none" stroke="#c9960e" stroke-width="1.5" opacity="0.7"/>
@@ -524,7 +492,6 @@
       <ul class="nav-links" role="list">
         <li><a href="#services">Services</a></li>
         <li><a href="#why-us">About</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
@@ -544,7 +511,6 @@
     <ul role="list">
       <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
       <li><a href="#why-us" onclick="closeMobileMenu()">About Us</a></li>
-      <li><a href="#testimonials" onclick="closeMobileMenu()">Reviews</a></li>
       <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
     </ul>
     <a href="#contact" class="btn-gold" onclick="closeMobileMenu()" style="width:100%; justify-content:center; display:flex;">Free Consultation</a>
@@ -613,7 +579,7 @@
       <div class="trust-inner">
         <div class="trust-item">
           <i data-lucide="shield-check" width="16" height="16"></i>
-          Licensed & Certified Professionals
+          Licensed &amp; Certified Professionals
         </div>
         <div class="trust-item">
           <i data-lucide="clock" width="16" height="16"></i>
@@ -699,7 +665,7 @@
               <div class="why-item fade-in">
                 <div class="why-check"><i data-lucide="check" width="18" height="18"></i></div>
                 <div>
-                  <div class="why-item-title">Bilingual English & Spanish</div>
+                  <div class="why-item-title">Bilingual English &amp; Spanish</div>
                   <p class="why-item-desc">We serve English and Spanish-speaking clients with equal fluency, ensuring nothing is lost in translation when it matters most.</p>
                 </div>
               </div>
@@ -720,7 +686,7 @@
               <div class="why-item fade-in">
                 <div class="why-check"><i data-lucide="check" width="18" height="18"></i></div>
                 <div>
-                  <div class="why-item-title">Fast Turnaround & Flexible Hours</div>
+                  <div class="why-item-title">Fast Turnaround &amp; Flexible Hours</div>
                   <p class="why-item-desc">Urgent deadlines? Evening appointments? We work around your schedule and prioritize time-sensitive documents.</p>
                 </div>
               </div>
@@ -733,68 +699,6 @@
               <div class="why-badge-label">Clients Served</div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section testimonials-bg" id="testimonials" aria-labelledby="testimonials-title">
-      <div class="section-inner">
-        <span class="section-label fade-in">Client Reviews</span>
-        <h2 class="section-title fade-in" id="testimonials-title">What Our Clients Say</h2>
-        <p class="section-sub fade-in">Real experiences from people we've helped navigate immigration, taxes, and legal documents.</p>
-        <div class="testimonials-grid">
-          <article class="testimonial-card fade-in">
-            <div class="stars" aria-label="5 out of 5 stars">
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-            </div>
-            <p class="testimonial-text">"JP OneSource handled my residency application from start to finish. They explained every form clearly and always kept me informed. I got my green card approved!"</p>
-            <div class="testimonial-author">
-              <div class="author-avatar" aria-hidden="true">M</div>
-              <div>
-                <div class="author-name">Maria G.</div>
-                <div class="author-service">Immigration Services</div>
-              </div>
-            </div>
-          </article>
-          <article class="testimonial-card fade-in">
-            <div class="stars" aria-label="5 out of 5 stars">
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-            </div>
-            <p class="testimonial-text">"I was so stressed about filing taxes for my small business. The team at JP OneSource made it easy and found deductions I didn't even know existed. Best refund I've ever gotten!"</p>
-            <div class="testimonial-author">
-              <div class="author-avatar" aria-hidden="true">R</div>
-              <div>
-                <div class="author-name">Roberto C.</div>
-                <div class="author-service">Business Tax Preparation</div>
-              </div>
-            </div>
-          </article>
-          <article class="testimonial-card fade-in">
-            <div class="stars" aria-label="5 out of 5 stars">
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-              <i data-lucide="star" width="16" height="16" style="fill:currentColor"></i>
-            </div>
-            <p class="testimonial-text">"Needed certified translation of my birth certificate and marriage license for immigration. Delivered in 2 days, accepted by USCIS on the first try. Highly recommend!"</p>
-            <div class="testimonial-author">
-              <div class="author-avatar" aria-hidden="true">A</div>
-              <div>
-                <div class="author-name">Ana L.</div>
-                <div class="author-service">Certified Translation</div>
-              </div>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -927,7 +831,6 @@
           <div class="footer-col-title">Company</div>
           <ul class="footer-links" role="list">
             <li><a href="#why-us">About Us</a></li>
-            <li><a href="#testimonials">Client Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -959,10 +862,8 @@
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script>
-    // Initialize icons
     lucide.createIcons();
 
-    // Theme toggle
     (function(){
       const toggle = document.querySelector('[data-theme-toggle]');
       const root = document.documentElement;
@@ -986,12 +887,10 @@
       }
     })();
 
-    // Sticky nav shadow
     window.addEventListener('scroll', () => {
       document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
     }, { passive: true });
 
-    // Mobile menu
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
     function closeMobileMenu() {
@@ -1003,11 +902,9 @@
       hamburger.setAttribute('aria-expanded', String(open));
     });
 
-    // Contact form submission
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
-      const form = this;
-      form.style.display = 'none';
+      this.style.display = 'none';
       const success = document.getElementById('success-msg');
       success.style.display = 'block';
       lucide.createIcons();
