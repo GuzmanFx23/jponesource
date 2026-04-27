@@ -125,9 +125,8 @@
     .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); margin-top: var(--space-12); }
     .service-card { background: var(--color-surface-2); border: 1px solid oklch(from var(--color-text) l c h / 0.08); border-radius: var(--radius-xl); overflow: hidden; transition: box-shadow var(--transition-interactive), transform var(--transition-interactive); }
     .service-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
-    .service-img { width: 100%; height: 200px; object-fit: cover; }
     .service-body { padding: var(--space-6); }
-    .service-icon { width: 40px; height: 40px; background: var(--color-primary-light); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--color-primary); margin-bottom: var(--space-4); }
+    .service-icon { width: 48px; height: 48px; background: var(--color-primary-light); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--color-primary); margin-bottom: var(--space-4); }
     .service-title { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600; color: var(--color-primary); margin-bottom: var(--space-2); }
     .service-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; margin-bottom: var(--space-4); }
     .service-link { display: inline-flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); font-weight: 600; color: var(--color-gold); transition: gap var(--transition-interactive), color var(--transition-interactive); }
@@ -139,8 +138,7 @@
     .why-feature-title { font-size: var(--text-base); font-weight: 600; color: var(--color-text); margin-bottom: var(--space-1); }
     .why-feature-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; }
     .why-visual { position: relative; }
-    .why-img { width: 100%; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
-    .why-accent { position: absolute; bottom: -var(--space-6); right: -var(--space-6); background: var(--color-primary); color: #fff; border-radius: var(--radius-lg); padding: var(--space-4) var(--space-6); box-shadow: var(--shadow-md); }
+    .why-accent { position: absolute; bottom: var(--space-6); right: calc(-1 * var(--space-6)); background: var(--color-primary); color: #fff; border-radius: var(--radius-lg); padding: var(--space-4) var(--space-6); box-shadow: var(--shadow-md); }
     .why-accent-num { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 700; color: var(--color-gold); display: block; }
     .why-accent-label { font-size: var(--text-xs); opacity: 0.75; }
     .disclaimer-section { background: var(--color-bg); padding-block: var(--space-8); }
@@ -319,36 +317,32 @@
         <p class="section-sub fade-in" id="services-sub">From navigating immigration paperwork to getting your taxes done right — we provide expert, personalized service for every step of your journey.</p>
         <div class="services-grid">
           <div class="service-card fade-in">
-            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=75" alt="Immigration documents and forms" width="800" height="200" loading="lazy" class="service-img">
             <div class="service-body">
-              <div class="service-icon"><i data-lucide="globe" width="20" height="20"></i></div>
+              <div class="service-icon"><i data-lucide="globe" width="22" height="22"></i></div>
               <h3 class="service-title">Immigration</h3>
               <p class="service-desc">Green card renewals, visas, residency and family petitions, citizenship applications — we guide you through every step of the immigration process.</p>
               <a href="#contact" class="service-link">Get Started <i data-lucide="arrow-right" width="14" height="14"></i></a>
             </div>
           </div>
           <div class="service-card fade-in">
-            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=75" alt="Tax preparation documents" width="800" height="200" loading="lazy" class="service-img">
             <div class="service-body">
-              <div class="service-icon"><i data-lucide="calculator" width="20" height="20"></i></div>
+              <div class="service-icon"><i data-lucide="calculator" width="22" height="22"></i></div>
               <h3 class="service-title">Tax Preparation</h3>
               <p class="service-desc">Personal tax returns, ITIN applications, back taxes. Maximize your refund with our certified tax professionals.</p>
               <a href="#contact" class="service-link">Get Started <i data-lucide="arrow-right" width="14" height="14"></i></a>
             </div>
           </div>
           <div class="service-card fade-in">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=75" alt="Translation documents" width="800" height="200" loading="lazy" class="service-img">
             <div class="service-body">
-              <div class="service-icon"><i data-lucide="languages" width="20" height="20"></i></div>
+              <div class="service-icon"><i data-lucide="languages" width="22" height="22"></i></div>
               <h3 class="service-title">Translation</h3>
               <p class="service-desc">Certified document translations for birth certificates, legal documents, diplomas, and more. Accepted by USCIS, courts, and government agencies.</p>
               <a href="#contact" class="service-link">Get Started <i data-lucide="arrow-right" width="14" height="14"></i></a>
             </div>
           </div>
           <div class="service-card fade-in">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=75" alt="Notary services" width="800" height="200" loading="lazy" class="service-img">
             <div class="service-body">
-              <div class="service-icon"><i data-lucide="stamp" width="20" height="20"></i></div>
+              <div class="service-icon"><i data-lucide="stamp" width="22" height="22"></i></div>
               <h3 class="service-title">Notary</h3>
               <p class="service-desc">Official notarization for affidavits, powers of attorney, contracts, and legal documents. Mobile notary available for your convenience.</p>
               <a href="#contact" class="service-link">Get Started <i data-lucide="arrow-right" width="14" height="14"></i></a>
@@ -398,10 +392,27 @@
             </div>
           </div>
           <div class="why-visual">
-            <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&q=80" alt="Professional consultation" width="800" height="600" loading="lazy" class="why-img">
-            <div class="why-accent" style="position:absolute; bottom: var(--space-6); right: calc(-1 * var(--space-6));">
-              <span class="why-accent-num">500+</span>
-              <span class="why-accent-label">Families Helped</span>
+            <div style="background: var(--color-primary-light); border-radius: var(--radius-xl); padding: var(--space-12) var(--space-8); text-align: center; box-shadow: var(--shadow-lg); position: relative;">
+              <div style="font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary); margin-bottom: var(--space-2);">500+</div>
+              <div style="font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-8);">Families Helped Across Rhode Island</div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+                <div style="background: var(--color-surface-2); border-radius: var(--radius-lg); padding: var(--space-4); box-shadow: var(--shadow-sm);">
+                  <div style="font-family: var(--font-display); font-size: var(--text-xl); font-weight: 700; color: var(--color-gold);">10+</div>
+                  <div style="font-size: var(--text-xs); color: var(--color-text-muted);">Years Experience</div>
+                </div>
+                <div style="background: var(--color-surface-2); border-radius: var(--radius-lg); padding: var(--space-4); box-shadow: var(--shadow-sm);">
+                  <div style="font-family: var(--font-display); font-size: var(--text-xl); font-weight: 700; color: var(--color-gold);">4</div>
+                  <div style="font-size: var(--text-xs); color: var(--color-text-muted);">Services Under One Roof</div>
+                </div>
+                <div style="background: var(--color-surface-2); border-radius: var(--radius-lg); padding: var(--space-4); box-shadow: var(--shadow-sm);">
+                  <div style="font-family: var(--font-display); font-size: var(--text-xl); font-weight: 700; color: var(--color-gold);">EN/ES</div>
+                  <div style="font-size: var(--text-xs); color: var(--color-text-muted);">Bilingual Team</div>
+                </div>
+                <div style="background: var(--color-surface-2); border-radius: var(--radius-lg); padding: var(--space-4); box-shadow: var(--shadow-sm);">
+                  <div style="font-family: var(--font-display); font-size: var(--text-xl); font-weight: 700; color: var(--color-gold);">5★</div>
+                  <div style="font-size: var(--text-xs); color: var(--color-text-muted);">Client Rating</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -568,16 +579,13 @@
   </footer>
 
   <script>
-    // Lucide icons
     lucide.createIcons();
 
-    // Nav scroll effect
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 20);
     }, { passive: true });
 
-    // Mobile menu
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
     hamburger.addEventListener('click', () => {
@@ -592,14 +600,12 @@
       if (!nav.contains(e.target) && !mobileMenu.contains(e.target)) closeMobileMenu();
     });
 
-    // Fade-in on scroll
     const fadeEls = document.querySelectorAll('.fade-in');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     fadeEls.forEach(el => observer.observe(el));
 
-    // Contact form
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
       document.getElementById('contact-form').style.display = 'none';
@@ -609,7 +615,6 @@
   </script>
 
   <script>
-  // Language Toggle
   const translations = {
     en: {
       navCta: 'Free Consultation',
