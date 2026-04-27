@@ -108,9 +108,10 @@
     }
     .nav-logo:hover { opacity: 0.8; }
     .nav-logo-icon { width: 40px; height: 40px; flex-shrink: 0; }
-    .nav-logo-img { height: 56px; width: auto; flex-shrink: 0; display: block; }
+    .nav-logo-img { height: 72px; width: auto; flex-shrink: 0; display: block; }
     .nav-logo-text { display: none; }
-    @media (max-width: 480px) { .nav-logo-img { height: 44px; } }
+    @media (max-width: 768px) { .nav-logo-img { height: 56px; } }
+    @media (max-width: 480px) { .nav-logo-img { height: 48px; } }
     .nav-links { display: flex; align-items: center; gap: var(--space-1); list-style: none; }
     .nav-links a {
       padding: var(--space-2) var(--space-3); border-radius: var(--radius-md);
@@ -453,7 +454,7 @@
   <nav class="nav" id="nav" role="navigation" aria-label="Main">
     <div class="nav-inner">
       <a href="#" class="nav-logo" aria-label="JP OneSource Home">
-        <img src="logo.jpg" alt="JP OneSource" class="nav-logo-img" width="85" height="56">
+        <img src="logo.jpg" alt="JP OneSource" class="nav-logo-img" width="109" height="72">
       </a>
       <ul class="nav-links" role="list">
         <li><a href="#services" data-i18n="nav.services">Services</a></li>
